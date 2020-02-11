@@ -25,7 +25,10 @@ SECRET_KEY = '-rj79o6d7=!&+pc8#a*!oed4d2!@by-g2-+yrsfq==_*)+j@gb'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'wx-abigail.herokuapp.com', 
+    'wx-abigail-dev.herokuapp.com'
+]
 
 
 # Application definition
