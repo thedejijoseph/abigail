@@ -1,7 +1,18 @@
+import json
 from django.shortcuts import render, get_object_or_404
 from django.http import JsonResponse
 
+from.serializers import UserAccountSerializer
+
 from .models import Image, Text
+
+def create_user_account(request):
+    if request.method == "POST":
+        request_data = json.loads(request.body)
+        serializer = UserAccountSerializer(data=request_data)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+        return JsonResponse({"detail": "user account created successfully"})
 
 def images_list(request):
     max_buffer = 12
