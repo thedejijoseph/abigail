@@ -15,6 +15,9 @@ from .models import Image
 from .serializers import UserAccountSerializer
 
 
+def index(request):
+    return JsonResponse({"detail": "consult readme at github.com/wrecodde/abigail"})
+
 def create_user_account(request):
     if request.method == "POST":
         request_data = json.loads(request.body)
