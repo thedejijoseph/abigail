@@ -1,5 +1,5 @@
 asgiref==3.5.2
-certifi==2021.5.30
+certifi==2022.9.24
 click==8.0.1
 cloudinary==1.30.0
 Django==3.2.16
