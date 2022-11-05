@@ -1,4 +1,4 @@
-asgiref==3.3.4
+asgiref==3.5.2
 certifi==2021.5.30
 click==8.0.1
 cloudinary==1.26.0
